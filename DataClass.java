@@ -1,16 +1,13 @@
 public class DataClass{
 
-    private int numberFirst;
-    private int numberSecond;
+    protected int numberFirst;
+    protected int numberSecond;
 
-    public void SetValue(int a, int b){
+    public DataClass(int a, int b){
         this.numberFirst = a;
         this.numberSecond = b;
     }
 
-    public int[] GetValue(){
-        return new int[]{this.numberFirst, this.numberSecond};
-    }
 
     public int CoreCalculator(int operator){
         

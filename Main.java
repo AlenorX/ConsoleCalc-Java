@@ -4,9 +4,7 @@ public class Main{
 
     static Scanner scan = new Scanner(System.in);
     public static void main(String args[]){
-        
         String[] operators = {"+", "-", "*", "/"};
-
         try{
             int choose = Choose(operators, "Выберите математический оператор:");
             int[] numbers = InputNumbers();
@@ -38,6 +36,5 @@ public class Main{
         int numberSecond = scan.nextInt();
         int[] resultCollection = {numberFirst, numberSecond};
         return resultCollection;
-
     }
 }

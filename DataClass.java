@@ -7,7 +7,6 @@ public class DataClass{
     public DataClass(int operator, int[] numbers){
         this.operator = operator;
         this.numbersInt = numbers;
-    
     }
 
 }

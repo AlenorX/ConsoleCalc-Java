@@ -21,5 +21,4 @@ public class CalculatorClass extends DataClass{
             return 404;
         }
     }
-
 }

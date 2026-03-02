@@ -8,14 +8,14 @@ public class Main{
         String[] operators = {"+", "-", "*", "/"};
 
         try{
-            int choose = Choose(operators, "Выберите математический оператор:");
+            int choose = Choose(operators, "Select a mathematical operator:");
             int[] numbers = InputNumbers();
             CalculatorClass calculator = new CalculatorClass(choose, numbers);
             int result = calculator.Calculate();
-            System.out.println("Ответ: " + result);
+            System.out.println("Answer: " + result);
         }
         catch (Exception e){
-            System.out.println("Возникла ошибка");
+            System.out.println("Data error input");
         }
     }
 
@@ -32,9 +32,9 @@ public class Main{
 
     public static int[] InputNumbers(){
 
-        System.out.println("Введите первое число или цифру");
+        System.out.println("Enter the first numder or digit:");
         int numberFirst = scan.nextInt();
-        System.out.println("Введите второе число или цифру");
+        System.out.println("Enter the second number or digit:");
         int numberSecond = scan.nextInt();
         int[] resultCollection = {numberFirst, numberSecond};
         return resultCollection;

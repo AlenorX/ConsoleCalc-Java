@@ -13,7 +13,7 @@ public class Main{
             System.out.println("Answer: " + result);
         }
         catch (Exception e){
-            System.out.println("Error");
+            System.out.println("Data entry error");
         }
     }
 

@@ -6,19 +6,38 @@ public class CalculatorClass extends DataClass{
 
     public int Calculate(){
         if(super.operator == 1){
-            return super.numbersInt[0] + super.numbersInt[1];
+            return Additon();
         }
         else if(super.operator == 2){
-            return super.numbersInt[0] - super.numbersInt[1];
+            return Subtraction();
         }
         else if(super.operator == 3){
-            return super.numbersInt[0] * super.numbersInt[1];
+            return Multiplication();
         }
         else if(super.operator == 4){
-            return super.numbersInt[0] / super.numbersInt[1];
+            return Division();
         }
         else{
             return 404;
         }
+    }
+
+    @Override
+    public int Additon(){
+        return super.numbers[0] + super.numbers[1];
+    }
+
+    @Override
+    public int Subtraction(){
+        return super.numbers[0] - super.numbers[1];
+    }
+
+    @Override
+    public int Multiplication(){
+        return super.numbers[0] * super.numbers[1];
+    }
+    @Override
+    public int Division(){
+        return super.numbers[0] / super.numbers[1];
     }
 }

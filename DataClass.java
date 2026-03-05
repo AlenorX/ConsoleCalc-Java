@@ -1,13 +1,20 @@
-public class DataClass{
+public abstract class DataClass{
 
     protected int operator;
-    protected int[] numbersInt;
-    protected float[] numbersFloat;
+    protected int[] numbers;
+
 
     public DataClass(int operator, int[] numbers){
         this.operator = operator;
-        this.numbersInt = numbers;
-    
+        this.numbers = numbers;
     }
+    public abstract int Additon();
+
+    public abstract int Subtraction();
+
+    public abstract int Multiplication();
+
+    public abstract int Division();
+
 
 }

@@ -4,9 +4,7 @@ public class Main{
 
     static Scanner scan = new Scanner(System.in);
     public static void main(String args[]){
-        
         String[] operators = {"+", "-", "*", "/"};
-
         try{
             int choose = Choose(operators, "Select a mathematical operator:");
             int[] numbers = InputNumbers();
@@ -32,12 +30,12 @@ public class Main{
 
     public static int[] InputNumbers(){
 
+
         System.out.println("Enter the first numder or digit:");
         int numberFirst = scan.nextInt();
-        System.out.println("Enter the second number or digit:");
+        System.out.println("Enter the second number or digit: ");
         int numberSecond = scan.nextInt();
         int[] resultCollection = {numberFirst, numberSecond};
         return resultCollection;
-
     }
 }

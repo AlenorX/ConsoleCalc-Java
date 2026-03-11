@@ -1,19 +1,23 @@
 import java.util.Scanner;
 
+
+
 public class Main{
 
     static Scanner scan = new Scanner(System.in);
+    static CalculationСlass calc = new CalculationСlass();
     public static void main(String args[]){
         String[] operators = {"+", "-", "*", "/"};
         try{
             int choose = Choose(operators, "Select a mathematical operator:");
             int[] numbers = InputNumbers();
-            CalculatorClass calculator = new CalculatorClass(choose, numbers);
-            int result = calculator.Calculate();
-            System.out.println("Answer: " + result);
+            calc.SetValue(choose, numbers);
+            int result = calc.Output();
+            System.out.println("Ответ: " + result);
+           
         }
         catch (Exception e){
-            System.out.println("Data error input");
+            System.out.println("Data error");
         }
     }
 

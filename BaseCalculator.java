@@ -7,4 +7,6 @@ public abstract class BaseCalculator {
         this.selectedOperator = operator;
         this.numbers = numbers;
     }
+
+    
 }
